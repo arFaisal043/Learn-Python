@@ -24,3 +24,14 @@ nestedDict = {
     }
 }
 # print(nestedDict["Marks"]["C"]) // 3.75
+
+
+# Sum if key value are same:
+# a = {1:100, 2:200, 3:300}
+# b = {3:900, 4:400, 5:500}
+
+# for i in b:
+#     if i in a.keys():
+#         a[i] += b[i]
+#     else: a[i] = b[i]    
+# print(a)    

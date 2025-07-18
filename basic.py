@@ -13,12 +13,12 @@ print(type(isBool))
 # Type Casting:
 a = int("2")
 b = 3.25
-#print(a+b)
-#print(type(a))
+# print(a+b)
+# print(type(a))
 
 a = 3.1416
 a = str(a)
-#print(type(a))
+# print(type(a))
 
 
 # Take input:
