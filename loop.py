@@ -4,6 +4,12 @@
 # for x in range(5, 10):
 #   print(x)
 
+
+
+# for i in range(10, 5, -1):
+#     print(i)
+
+
 # nums = [123, 35, 456, 765 , 890]
 # for val in nums:
 #      if(val % 2 != 0):
@@ -27,7 +33,6 @@
 #     else: 
 #         print("No")
 #         break
-
 
 
 
