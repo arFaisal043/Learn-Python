@@ -3,6 +3,17 @@ b = 3
 #if(a > b or a == b): print("a > b")
 
 
+# Find max value in a list
+# l = [1, 3, 2, 5, 4]
+# max = float('-inf')
+
+# for i in l:
+#     if(i > max): 
+#         max = i
+#         continue
+# print(max)
+
+
 # Ternary Operator:
 #print("a < b") if a < b else ("a > b")
 

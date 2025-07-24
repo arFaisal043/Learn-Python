@@ -64,9 +64,24 @@ print(a.find("s")) # 3
 
 """
 
-# Check String
-str = "Abdur Rahman Faisal"
+# Check String:
+# str = "Abdur Rahman Faisal"
 # print("Rahman" in str) // true
 
 # if "Rahman" in str:
 #     print("Yes")
+
+
+# s, part = "daabcbaabcbc", "abc"
+
+# while(len(s) > 0 and s.find(part) < len(s)):
+#       s.replace(part, " ")
+
+# print(s)
+
+s, part = "daabcbaabcbc", "abc"
+
+while(part in s):  # While 'part' exists in 's'
+    s = s.replace(part, "")  # Remove the first occurrence each time
+
+print(s)  # Output: "dab"
