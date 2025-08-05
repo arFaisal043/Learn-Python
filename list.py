@@ -117,3 +117,36 @@ def isSorted(list):
 # print(d)  
 
 
+"""
+6. Diagonal Sum: O(n2)
+def diagonal_sum(l , n):
+    sum = 0
+    for i in range(0 , n):
+        for j in range(0 , n):
+            if(i == j):
+                sum = sum + l[i][j]
+            elif(j == n - i -1):
+                sum = sum + l[i][j] 
+    return sum
+
+
+l = [[1, 2, 3, 4], [5, 6, 7, 8], [9, 10, 11, 12], [13, 14, 15, 16]]
+n = 4
+print(diagonal_sum(l , n))
+
+
+-- Optimize solution -> O(n):
+def diagonal_sum(l , n):
+    sum = 0
+    for i in range(0 , n):
+        sum = sum + l[i][i]
+        if(i != n-1-i):
+            sum = sum + l[i][n-1-i]
+
+    return sum
+
+
+l = [[1, 2, 3, 4], [5, 6, 7, 8], [9, 10, 11, 12], [13, 14, 15, 16]]
+n = 4
+print(diagonal_sum(l , n))
+"""
