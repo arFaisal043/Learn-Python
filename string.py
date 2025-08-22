@@ -72,16 +72,30 @@ print(a.find("s")) # 3
 #     print("Yes")
 
 
+# prob 1:
+
 # s, part = "daabcbaabcbc", "abc"
 
-# while(len(s) > 0 and s.find(part) < len(s)):
-#       s.replace(part, " ")
+# while(part in s):  # While 'part' exists in 's'
+#     s = s.replace(part, "")  # Remove the first occurrence each time
 
-# print(s)
+# print(s)  # Output: "dab"
 
-s, part = "daabcbaabcbc", "abc"
 
-while(part in s):  # While 'part' exists in 's'
-    s = s.replace(part, "")  # Remove the first occurrence each time
+# prob 2:
+from functools import cmp_to_key
 
-print(s)  # Output: "dab"
+def large_nums(nums):
+    def comp(a , b):
+        if(a + b > b + a): return -1
+        else: return 1
+
+    str_nums = list(map(str , nums))
+    #return str_nums    # ['3', '30', '34', '5', '9']
+    str_nums.sort(key = cmp_to_key(comp))
+    res = ''.join(str_nums)
+
+    return res
+
+numbers = [3, 30, 34, 5, 9]
+print(large_nums(numbers))
