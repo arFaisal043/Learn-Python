@@ -5,6 +5,24 @@
 #   print(x)
 
 
+# Enumerate vs normal
+
+# items = ["BD", "USA", "UK"]
+# for i in range(len(items)):
+#     print(i, items[i]) // i is index number
+
+# print("------")
+
+# for i,itm in enumerate(items):
+#     print(i , itm)
+
+# output:
+# 0 BD
+# 1 USA
+# 2 UK
+
+
+
 
 # for i in range(10, 5, -1):
 #     print(i)

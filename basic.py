@@ -45,3 +45,8 @@ print(sum(val1 , val2))
 # Random Number:
 import random
 #print(random.randrange(1 , 5));
+
+
+
+def fun():
+    print("hello world!")

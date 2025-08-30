@@ -58,11 +58,15 @@
 # # way 1
 # newList = list(map(lambda a: a**2, l))
 # print(newList) #[1, 4, 9, 16]
+
 # # way 2
 # a = []
 # for i in l:
 #     a.append(i**2)
 # print(a) #[1, 4, 9, 16]
+
+
+
 
 
 # Problem2: Find Area on a list
@@ -80,14 +84,14 @@
 # print(b)
 
 
-# Problem2: Add 2 list and Multiply
+# Problem3: Add 2 list and Multiply
 # list1 = [1, 2, 3, 4]
 # list2 = [4, 3, 2, 1]
 # newList = list(map(lambda a, b: a*b , list1, list2))
 # print(newList) #[4, 6, 6, 4]
 
 
-# Problem 3: convert Celsius To Fahrenheit.
+# Problem 4: convert Celsius To Fahrenheit.
 # celScale = [10, 20, 30, 40, 50]
 # # Way 1:
 # farScale = []
@@ -98,6 +102,8 @@
 # # Way 2:
 # farScale = list(map(lambda c: c*(9 // 5)+ 32 , celScale))
 # print(farScale) # [42, 52, 62, 72, 82]
+# --> Note: / this is a regular division(return float value) and // this is float division
+
 
 # # Way 3:
 # def CelsiusToFahrenheit(c):

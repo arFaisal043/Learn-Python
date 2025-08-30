@@ -15,7 +15,7 @@ b = 3
 
 
 # Ternary Operator:
-#print("a < b") if a < b else ("a > b")
+#print("a < b") if a < b else print("a > b")
 
 
 # Pass Statement:

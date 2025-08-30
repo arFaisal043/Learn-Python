@@ -10,7 +10,7 @@
 # # solution id use " "
 
 
-# # Foe multiple line and New line
+# # For multiple line and New line
 # a = """Lorem ipsum dolor sit amet,
 # consectetur adipiscing elit,
 # sed do eiusmod tempor incididunt

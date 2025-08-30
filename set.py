@@ -21,17 +21,17 @@ collection = set()
 
 ## Set Methods:
 
-# add()
+# add():
 # set = {1, 2}
 # set.add(3)
 # print(set)
 
-# union()
+# union():
 # set1 = {1, 2, 3}
 # set2 = {2, 3, 4}
 # print(set1.union(set2)) // {1, 2, 3, 4}
 
-# Intersection()
+# Intersection():
 # set1 = {1, 2, 3}
 # set2 = {2, 3, 4}
 # print(set1.intersection(set2)) // {2, 3}

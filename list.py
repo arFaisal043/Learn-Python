@@ -9,6 +9,7 @@
 # x = l
 # x[0] = 100
 # print(x) // [100, 2, 3]
+# print(l) // l is also [100, 2, 3]
 
 # List are Mutable/changeable:
 # list1 = [1 , 2 , 4 , 5 , 6]
@@ -96,7 +97,7 @@ def isSorted(list):
     return True    
 # print(isSorted([1, 33, 3, 4, 5]))
 
-  
+
 
 # 5. Count value:
 # (for any 1 value)
@@ -125,7 +126,7 @@ def diagonal_sum(l , n):
         for j in range(0 , n):
             if(i == j):
                 sum = sum + l[i][j]
-            elif(j == n - i -1):
+            elif(j == n-i-1):
                 sum = sum + l[i][j] 
     return sum
 
