@@ -1,3 +1,9 @@
 import numpy as np
-arr = np.array([1, 2, 3, 4])
-print(type(arr))
+
+a = np.array([1, 2, 3, 4])
+b = a
+print(b)
+
+b[0] = 100
+print(a)
+print(b)

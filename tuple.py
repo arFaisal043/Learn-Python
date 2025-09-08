@@ -22,3 +22,8 @@
 # a, b, c, d = 1, 2, 3, 4
 # print(a) // 1
 # print(b) // 2
+
+
+student = [19, 92, 88]
+age, math, science = student
+print(age, math, science) # 19 92 88
