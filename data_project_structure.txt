@@ -1,0 +1,25 @@
+ecommerce-analytics-project/
+│
+├── data/                   # Data storage (do not upload large files to GitHub)
+│   ├── raw/                # Original, immutable data (e.g., raw CSVs)
+│   └── processed/          # Cleaned data ready for modeling
+│
+├── notebooks/              # Jupyter notebooks for experimentation
+│   ├── 01_eda.ipynb        # Exploratory Data Analysis & Visualization
+│   ├── 02_preprocessing.ipynb # Data cleaning & feature engineering
+│   └── 03_modeling.ipynb   # ML model training (CLV, Churn, etc.)
+│
+├── src/                    # Source code for production-ready scripts
+│   ├── __init__.py
+│   ├── data_loader.py      # Script to load data from CSV/SQL
+│   ├── cleaning.py         # Functions for cleaning (handling nulls, types)
+│   └── features.py         # Script for feature engineering
+│
+├── models/                 # Saved model files (e.g., .pkl or .joblib)
+│
+├── reports/                # Final analysis or visualization exports
+│   └── figures/            # Saved charts (PNG/PDF)
+│
+├── requirements.txt        # List of libraries (Pandas, Scikit-Learn, etc.)
+├── README.md               # Project overview and how to run it
+└── .gitignore              # Files to ignore (e.g., __pycache__, .env, /data)
