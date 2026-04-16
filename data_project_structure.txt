@@ -1,7 +1,7 @@
 ecommerce-analytics-project/
 │
 ├── data/                   # Data storage (do not upload large files to GitHub)
-│   ├── raw/                # Original, immutable data (e.g., raw CSVs)
+│   ├── raw/                # Original dataset (DO NOT edit)
 │   └── processed/          # Cleaned data ready for modeling
 │
 ├── notebooks/              # Jupyter notebooks for experimentation
@@ -23,3 +23,85 @@ ecommerce-analytics-project/
 ├── requirements.txt        # List of libraries (Pandas, Scikit-Learn, etc.)
 ├── README.md               # Project overview and how to run it
 └── .gitignore              # Files to ignore (e.g., __pycache__, .env, /data)
+
+
+
+
+=> Details:
+------------------------------------
+
+
+✅ data/
+
+How to maintain:
+
+raw/ → Original dataset (DO NOT edit)
+processed/ → Cleaned & transformed data
+✔️ Always read from raw/
+✔️ Always save cleaned data to processed/
+
+# example
+raw_df = pd.read_csv("data/raw/orders.csv")
+clean_df.to_csv("data/processed/orders_cleaned.csv", index=False)
+
+
+
+
+✅ notebooks/
+
+notebooks/
+├── 01_data_cleaning.ipynb
+├── 02_eda.ipynb
+├── 03_business_analysis.ipynb
+
+
+How to maintain:
+
+One notebook = one responsibility
+Never mix cleaning + EDA + modeling in one notebook
+Use numbering (01_, 02_) to keep order
+
+
+
+✅ src/ (This is what makes you look professional)
+src/
+├── data_preprocessing.py
+├── analysis.py
+├── visualization.py
+
+
+How to maintain:
+
+Reusable logic goes here
+Notebooks should call functions, not contain heavy logic
+
+# src/data_preprocessing.py
+def clean_orders(df):
+    df = df.drop_duplicates()
+    df['order_date'] = pd.to_datetime(df['order_date'])
+    return df
+
+# notebook
+from src.data_preprocessing import clean_orders
+df = clean_orders(df)
+
+📌 Rule:
+If you copy-paste code → move it to src/
+
+
+
+
+✅ visuals/
+
+visuals/
+├── revenue_trend.png
+├── category_sales.png
+
+
+How to maintain:
+
+Save important charts used in README or LinkedIn
+
+Always name clearly
+
+plt.savefig("visuals/monthly_revenue.png", dpi=300)
